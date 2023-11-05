@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>YourFri.day</title>
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+<style>
+  /* Style guide */
+  :root {
+    --main-bg-color: #00102a; /* Dark Blue Background */
+    --footer-bg-color: #000; /* Dark footer background */
+    --main-text-color: #ffffff; /* White text color */
+    --accent-color: #e31b6d; /* Accent color for buttons and links */
+    --font-family: 'Roboto', sans-serif;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--main-bg-color);
+    color: var(--main-text-color);
+    font-family: var(--font-family);
+    overflow-x: hidden;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  .image, .hero {
+    width: 100%;
+    height: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the aspect ratio is maintained without stretching the image */
+    min-height: 50vw; /* Ensures a prominent size for the hero image */
+  }
+  
+  .image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the aspect ratio is maintained without stretching the image */
+  }
+  
+  .text-content {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--footer-bg-color);
+  }
+  
+  .footer img {
+    width: 300px; /* Increased logo size */
+  }
+  
+  @media (max-width: 768px) {
+    .text-content, .footer {
+      padding: 10px;
+    }
+    
+    .footer img {
+      width: 200px; /* Adjust logo size on smaller screens */
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Hero Image -->
+  <div class="hero" data-aos="fade-in">
+    <img src="hero.png" alt="Hero Image">
+  </div>
+
+  <div class="text-content" data-aos="fade-up">
+    <h1>The Red Carpet Experience</h1>
+    <p>Elevate your customer experience with YourFri.day</p>
+    <a href="#"><h1>Get in on our beta!</h1></a>
+  </div>
+
+  <!-- Feature Image -->
+  <div class="image" data-aos="zoom-in">
+    <img src="Blonde_receptionist_big.jpg" alt="Feature 1">
+  </div>
+
+  <!-- Feature Content -->
+  <div class="text-content" data-aos="fade-up">
+    <h2>White Glove VIP Onboarding</h2>
+    <p>Your voice. Your brand. Your custom voice design.</p>
+  </div>
+
+  <!-- Feature Image -->
+  <div class="image" data-aos="zoom-in">
+    <img src="man.png" alt="Feature 2">
+  </div>
+
+  <!-- Feature Content -->
+  <div class="text-content" data-aos="fade-up">
+    <h2>Next-Gen Voice Agent Assistant</h2>
+    <p>Your assistant that doesn't rest, ready to revolutionize customer interaction.</p>
+  </div>
+
+  <!-- Call to Action -->
+  <div class="text-content" data-aos="fade-up">
+    <h2>Experience YourFri.day</h2>
+    <p>Call now for a demo or schedule a discovery meeting. Don't forget to ask about your prize!</p>
+    <p><a href="tel:5555555555">Call (555) 555-5555</a></p>
+    <p>Your Bespoke Custom Concierge and Receptionist service.</p>
+  </div>
+
+  <!-- Feature Image -->
+  <div class="image" data-aos="zoom-in">
+    <img src="man2.webp" alt="Feature 3">
+  </div>
+
+  <!-- Footer -->
+<div class="footer">
+  <p>© 2023 YourFri.day All rights reserved.</p>
+  <img src="yourfriday_logo300x100.png" alt="YourFri.day Logo">
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1200,
+    once: true,
+  });
+</script>
+</body>
+</html>
