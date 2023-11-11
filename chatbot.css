@@ -88,5 +88,5 @@
     align-items: center; /* Centers the child elements horizontally */
     justify-content: center; /* Centers the child elements vertically */
     text-align: center; /* Centers the text inside the elements */
-    padding-top: 25px; /* Add padding to ensure content is not covered */
+    padding-top: 10px; /* Add padding to ensure content is not covered */
 }
