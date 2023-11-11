@@ -1,7 +1,7 @@
 /* Anchors the chat container to the bottom and centers it horizontally */
 #chat-container {
     position: fixed; /* Keep it fixed within the viewport */
-    top: 300px; /* Space from the top, adjust as needed */
+    top: 275px; /* Space from the top, adjust as needed */
     bottom: 25px; /* 25px from the bottom */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Centering adjustment */
