@@ -1,55 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Minimal Interactive Widget</title>
-<style>
-  body {
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    background: #111; /* Dark background for contrast */
-  }
-  .widget-button {
-    position: fixed;
-    bottom: 40px;
-    right: 40px;
-    width: 50px;
-    height: 50px;
-    background-color: rgb(93, 254, 202);
-    border-radius: 25px; /* Makes it pill-shaped */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: background-color 0.3s ease;
-    cursor: pointer;
-  }
-  .widget-button:hover {
-    background-color: rgb(93, 124, 202); /* Hover state */
-  }
-  .widget-button:active {
-    background-color: rgb(255, 0, 0); /* Active state */
-  }
-  .widget-icon {
-    width: 24px;
-    height: 24px;
-    background-image: url('phone.svg'); /* Default state icon */
-    background-size: cover;
-  }
-  .widget-button:hover .widget-icon {
-    background-image: url('loader-2.svg'); /* Loading state icon */
-  }
-  .widget-button:active .widget-icon {
-    background-image: url('phone-off.svg'); /* Active state icon */
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YourFriday Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Add your CSS styling here */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            text-align: center;
+            padding: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 600px; /* Adjust height as needed */
+            border: none;
+        }
+        .waitlist-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .waitlist-link a {
+            display: inline-block;
+            background-color: #0078D4; /* Microsoft blue, adjust as needed */
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-  <div class="widget-button">
-    <div class="widget-icon"></div>
-  </div>
+
+<div class="header">
+    <img src="/path/to/yourfriday_logo.png" alt="YourFriday Logo">
+    <h1>YourFri.day</h1>
+</div>
+
+<iframe src="https://vapi.ai?demo=true&shareKey=bbf0848e-aadc-43b8-b991-c269fdaa39b7&assistantId=b95a240f-c040-4cfd-9033-980c366531fa" title="YourFriday Demo"></iframe>
+
+<div class="waitlist-link">
+    <h2>Join the Beta Waitlist</h2>
+    <a href="https://forms.office.com/r/jWXA9CvUuL" target="_blank">Sign Up Here</a>
+</div>
+
 </body>
 </html>
