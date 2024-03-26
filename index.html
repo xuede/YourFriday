@@ -6,39 +6,47 @@
     <title>YourFriday Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        /* Add your CSS styling here */
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            background-color: #00061a; /* Dark background */
-            color: #ffffff; /* Ensuring text is visible on the dark background */
-        }
-        .header {
-            text-align: center;
-            padding: 10px; /* Reduced padding for a tighter header */
-            margin-bottom: 20px; /* Adjusted space for visual separation */
-        }
+    /* Add your CSS styling here */
+    body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: #00061a; /* Dark background */
+        color: #ffffff; /* Ensuring text is visible on the dark background */
+    }
+    .header {
+        text-align: center;
+        padding: 10px; /* Reduced padding for a tighter header */
+        margin-bottom: 20px; /* Adjusted space for visual separation */
+    }
+    iframe {
+        width: 100%;
+        height: 50vh;
+        border: none;
+        max-height: 600px; /* Ensures iframe is not too tall on larger screens */
+    }
+    /* Adjustments for desktop screens */
+    @media (min-width: 768px) {
         iframe {
-            width: 100%;
-            height: 50vh; /* Adjust iframe height to maintain visibility of the waitlist link */
-            border: none;
-            max-height: 600px; /* Ensures iframe is not too tall on larger screens */
+            margin: 0 25%; /* Adds 25% margin to left and right on desktop */
+            height: 60vh; /* Adjust the height as needed */
+            max-width: 50%; /* Limits the maximum width to maintain aspect ratio */
         }
-        .waitlist-link {
-            text-align: center;
-            padding: 20px 0; /* Ensures this section is visibly separated but still within view */
-        }
-        .waitlist-link a {
-            display: inline-block;
-            background-color: #0078D4; /* Microsoft blue, adjust as needed */
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            font-weight: 600;
-        }
+    }
+    .waitlist-link {
+        text-align: center;
+        padding: 20px 0; /* Ensures this section is visibly separated but still within view */
+    }
+    .waitlist-link a {
+        display: inline-block;
+        background-color: #0078D4; /* Microsoft blue, adjust as needed */
+        color: white;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+    }
     </style>
 </head>
 <body>
