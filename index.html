@@ -12,19 +12,23 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            background-color: #00061a; /* Dark background */
+            color: #ffffff; /* Ensuring text is visible on the dark background */
         }
         .header {
             text-align: center;
-            padding: 20px;
+            padding: 10px; /* Reduced padding for a tighter header */
+            margin-bottom: 20px; /* Adjusted space for visual separation */
         }
         iframe {
             width: 100%;
-            height: 600px; /* Adjust height as needed */
+            height: 50vh; /* Adjust iframe height to maintain visibility of the waitlist link */
             border: none;
+            max-height: 600px; /* Ensures iframe is not too tall on larger screens */
         }
         .waitlist-link {
             text-align: center;
-            margin-top: 20px;
+            padding: 20px 0; /* Ensures this section is visibly separated but still within view */
         }
         .waitlist-link a {
             display: inline-block;
@@ -40,15 +44,14 @@
 <body>
 
 <div class="header">
-    <img src="/path/to/yourfriday_logo.png" alt="YourFriday Logo">
+    <img src="yourfriday_logo.png" alt="YourFriday Logo" style="max-width: 100px; height: auto;"> <!-- Adjust logo size for tighter header -->
     <h1>YourFri.day</h1>
 </div>
 
 <iframe src="https://vapi.ai?demo=true&shareKey=bbf0848e-aadc-43b8-b991-c269fdaa39b7&assistantId=b95a240f-c040-4cfd-9033-980c366531fa" title="YourFriday Demo"></iframe>
 
 <div class="waitlist-link">
-    <h2>Join the Beta Waitlist</h2>
-    <a href="https://forms.office.com/r/jWXA9CvUuL" target="_blank">Sign Up Here</a>
+    <a href="https://forms.office.com/r/jWXA9CvUuL" target="_blank">Join the Beta Waitlist</a>
 </div>
 
 </body>
