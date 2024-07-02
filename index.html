@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>YourFriday Landing Page</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-    /* Add your CSS styling here */
-    body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        background-color: #000000; /* Dark background */
-        color: #ffffff; /* Ensuring text is visible on the dark background */
-    }
-    .header {
-        text-align: center;
-        padding: 10px; /* Reduced padding for a tighter header */
-        margin-bottom: 20px; /* Adjusted space for visual separation */
-    }
-    iframe {
-        width: 100%;
-        height: 50vh;
-        border: none;
-        max-height: 600px; /* Ensures iframe is not too tall on larger screens */
-    }
-    /* Adjustments for desktop screens */
-    @media (min-width: 768px) {
-        iframe {
-            margin: 0 25%; /* Adds 25% margin to left and right on desktop */
-            height: 60vh; /* Adjust the height as needed */
-            max-width: 50%; /* Limits the maximum width to maintain aspect ratio */
-        }
-    }
-    .waitlist-link {
-        text-align: center;
-        padding: 20px 0; /* Ensures this section is visibly separated but still within view */
-    }
-    .waitlist-link a {
-        display: inline-block;
-        background-color: #0078D4; /* Microsoft blue, adjust as needed */
-        color: white;
-        padding: 10px 20px;
-        text-decoration: none;
-        border-radius: 5px;
-        font-weight: 600;
-    }
-    </style>
+  <title>YourFri.day Textual Demo</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Optimized Order of Stylesheets and Scripts for Performance -->
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+  
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+  
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700&display=swap" rel="stylesheet">
+  
+  <!-- MDB -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="chatbot.css" rel="stylesheet">
+
+  <!-- Dialogflow Messenger CSS -->
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+
 </head>
 <body>
+  <div id="top-container">
+    <center>
+      <img src="" alt="" style="height: 100px; width: auto;">
+      <h1 class="mb-4">YourFri.day | Textual</h1>
+      <p>This demo showcases how your agent functions as a chatbot on your site. Chat with your Friday!</p>
+      <p><a href="https://YourFri.day">Find out more at https://YourFri.day</a></p>
+    </center>
+  </div>
 
-<div class="header">
-    <img src="yourfriday_logo.png" alt="YourFriday Logo" style="max-width: 100px; height: auto;"> <!-- Adjust logo size for tighter header -->
-    <h1>YourFri.day</h1>
-</div>
+  <!-- Bootstrap and MDB Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.4.0/mdb.min.js"></script>
 
+  <!-- Dialogflow Messenger Script -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
 
-<iframe src="https://vapi.ai?demo=true&shareKey=bbf0848e-aadc-43b8-b991-c269fdaa39b7&assistantId=869c00c3-9d59-48c7-9a3a-0fbc6c791e8c" title="YourFriday Demo" allow="microphone"></iframe>
+  <!-- Dialogflow Messenger Widget -->
+  <df-messenger
+    location="us-central1"
+    project-id="nebula-whisper"
+    agent-id="d9edbf78-bd4c-406a-a576-403f7a12c779"
+    language-code="en"
+    allow-feedback="all">
+    <df-messenger-chat-bubble
+      chat-title="NebulaWhipserer">
+    </df-messenger-chat-bubble>
+  </df-messenger>
+  <style>
+    df-messenger {
+      z-index: 999;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+    }
+  </style>
 
-<div class="waitlist-link">
-    <a href="https://forms.office.com/r/jWXA9CvUuL" target="_blank">Join the Beta Waitlist</a>
-</div>
+  <!-- Custom Script -->
+  <script async src="https://app.agent4.ai/chatjs/ZmUyNjljNTQtNzlkNS0xMWVlLWE3YTgtMGE1OGE5ZmVhYzAy/"></script>
 
 </body>
 </html>
